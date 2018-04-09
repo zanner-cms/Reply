@@ -14,17 +14,8 @@ chai.use(chaiAsPromised);
 const mlog = require('mocha-logger');
 const util = require('util');
 
-const AsyncFunction = require('../AsyncFunction').AsyncFunction;
 const Reply = require('../Reply').Reply;
 
-
-describe('AsyncFunction', () => {
-
-	it('is async function class', () => {
-		expect(async function () {}).to.be.instanceof(AsyncFunction);
-	});
-
-});
 
 describe('Reply', () => {
 

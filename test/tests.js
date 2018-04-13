@@ -39,10 +39,10 @@ describe('Reply', () => {
 			let dependencies_2 = ['some Reply 1', 'some Reply 2'];
 			let match = async function (request) { return 1; };
 			let match_1 = function (request) { return 1; };
-			let match_2 = [];
-			let match_3 = /.*/ig;
-			let match_4 = '';
-			let match_5 = {};
+			let match_2 = []; // TODO: 
+			let match_3 = /.*/ig; // TODO: 
+			let match_4 = ''; // TODO: 
+			let match_5 = {}; // TODO: 
 			let action = async function (x) { return 'abc' + x; };
 
 			expect(Reply.init(name, service, dependencies, match, action)).to.be.an.instanceof(Reply);
